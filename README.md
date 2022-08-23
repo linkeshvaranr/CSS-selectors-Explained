@@ -243,9 +243,9 @@
     A(div)-->D(p)
     A(div)-->J(p)
 
-    E(div)--->F(a)
-    E(div)--->G(p)
-    E(div)--->I(p)
+    E(div)-->F(a)
+    E(div)-->G(p)
+    E(div)-->I(p)
     classDef select fill:#1919a6;
 ```
 
@@ -266,9 +266,9 @@
    A(div)-->C(a)
    A(div)-->D(p):::select
 
-   E(div)--->F(p)
-   E(div)--->G(p)
-   E(div)--->I(a)
+   E(div)-->F(p)
+   E(div)-->G(p)
+   E(div)-->I(a)
 
    classDef select fill:#1919a6;
 
