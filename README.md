@@ -174,7 +174,7 @@
 
 ***
 
-### a, div (or slector) selects all elements in the list
+### a, div (Or slector) selects all elements in the list
 
 ```css
     a, div{
@@ -195,6 +195,34 @@
 ```
 
 ***
+
+### a.class-name (And selctor) selects the matching combination
+```html
+<html>
+    <style>
+        a.a-color{
+            color:red;
+        }
+        
+
+    </style>
+
+    <!-- Display in red -->
+    <a class="a-color" href="">I'm Gokul</a> 
+    <!-- No change -->
+    <p class="p-color">I'm Gokul
+</html>
+```
+```mermaid
+    graph TD
+    A(a.class-name):::select
+    B(p.class-name)
+
+
+    classDef select fill:#1919a6;
+
+```
+
 
 
 
