@@ -273,6 +273,26 @@
    classDef select fill:#1919a6;
 
 ```
+***
+
+### a:only-child (Only child selector) selects element if it's a single child
+
+```css
+    a:only-child{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(div)-->B(a)
+    A(div)-->C(p)
+    D(div)-->E(a):::select
+    
+
+    classDef select fill:#1919a6;
+```
 
 
 
