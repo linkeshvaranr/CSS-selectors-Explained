@@ -1,9 +1,11 @@
-#CSS Cheat Sheet
+# CSS Cheat Sheet
 
+universal 
 ```mermaid
     graph TD;
-        A --> B
-        A --> C
-        style B fill:#1919a6;
+        A
+        B 
+        C
+        D
 
 ```
