@@ -137,7 +137,7 @@
         
     }
 ```
-```mermaid{
+```mermaid
     graph TD
     A(p) 
     B(div)
