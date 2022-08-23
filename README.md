@@ -25,6 +25,7 @@
     div{
         background-color:blue;
 
+
     }
 ```
 ```mermaid
@@ -43,6 +44,8 @@
 ### .class-name (class selector) selects all elements having the same class attribute
 ```css
     .box{
+        background-color:blue;
+
 
     }
 
@@ -56,5 +59,28 @@
 
     classDef select fill:#1919a6;
 ```
+
+***
+
+### #unique-id (ID selector) selects element having the id attribute 
+```css
+    #A{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    #A
+    #B
+    #C
+    #D
+    style #A fill:#1919a6;
+```
+
+***
+
+
 
 
