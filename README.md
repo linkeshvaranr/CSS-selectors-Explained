@@ -388,4 +388,4 @@
    classDef select fill:#1919a6;
 ```
 
->Thanks. I hope it helps :) any queries do pm [@linkeshvaranr](https://twitter.com/messages/944879661900742657-1555128594728333313)
+>Thanks. I hope it helps :) any queries do pm [@linkeshvaranr](https://twitter.com/linkeshvaranr)
