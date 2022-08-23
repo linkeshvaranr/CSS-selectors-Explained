@@ -294,6 +294,57 @@
     classDef select fill:#1919a6;
 ```
 
+***
+
+### a:first-of-type (First of type selector) selects first child of specified type
+
+```css
+    a:first-of-type{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+ graph TD
+   A(div)-->B(p)
+   A(div)-->C(p)
+   A(div)-->D(a):::select
+   A(div)-->E(a)
+   A(div)-->F(div)-->G(a):::select
+   F-->H(a)
+   
+
+   classDef select fill:#1919a6;
+
+```
+
+***
+
+### a:last-of-type (Last of type selector) selects last child of specified type
+
+```css
+    a:last-of-type{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+ graph TD
+   A(div)-->B(p)
+   A(div)-->C(p)
+   A(div)-->D(a)
+   A(div)-->E(a):::select
+   A(div)-->F(div)-->G(a)
+   F-->H(a):::select
+   
+
+   classDef select fill:#1919a6;
+```
+
+
+
 
 
 
