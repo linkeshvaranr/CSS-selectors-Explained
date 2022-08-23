@@ -62,7 +62,7 @@
 
 ***
 
-### #unique-id (ID selector) selects element having the id attribute 
+### #unique-id (ID selector) selects element having the same id attribute 
 ```css
     #A{
         background-color:blue;
@@ -80,6 +80,28 @@
 ```
 
 ***
+
+# Combination
+## CSS selectors can be used in various combination to select desired element/s
+
+### div p (Descendant slector) slelects all descendant(p) element of the parent(div)
+
+```css
+    div p{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(div)-->B(p):::select
+    A --> C(div) -->F(p):::select
+    A --> D(btn)
+    B --> E(p):::select
+
+    classDef select fill:#1919a6;
+```
 
 
 
