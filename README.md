@@ -1,6 +1,6 @@
-# CSS Cheat Sheet
+# CSS Selectors Explained
 
-### * (Universal Selector) selects all the element 
+### * (Universal Selector) selects all the elements 
 ```css
     *{
         background-color:blue;
@@ -20,7 +20,7 @@
 
 ***
 
-### div (Type selector) selects elements of the same type
+### div (Type selector) selects all elements of the same type
 ```css
     div{
         background-color:blue;
@@ -37,3 +37,24 @@
     classDef select fill:#1919a6;
 
 ```
+
+***
+
+### .class-name (class selector) selects all elements having the same class attribute
+```css
+    .box{
+
+    }
+
+```
+```mermaid
+    graph TD
+    A(.box):::select;
+    B(.box):::select;
+    C(.circle)
+    D(.triangle);
+
+    classDef select fill:#1919a6;
+```
+
+
