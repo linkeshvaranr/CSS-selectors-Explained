@@ -338,19 +338,54 @@
    A(div)-->E(a):::select
    A(div)-->F(div)-->G(a)
    F-->H(a):::select
+
+
+   classDef select fill:#1919a6;
+```
+***
+
+### p:only-of-type (Only of type) selects element if It's the unique among siblings
+
+```css
+    p:only-of-type{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+   A(div)-->B(a)
+    A-->C(p):::select
+   A-->D(a)
+   A-->E(div)
+   E-->F(p)
+   E-->G(a)
+   E-->H(p)
+
+   classDef select fill:#1919a6;
+
+```
+
+***
+
+### a:not(.class1) - (Not selector) selects all elements (a) that's not specified inside the not selector
+
+```css
+    a:not(.class1){
+        background-color:blue;
+
+    }
+```
+```mermaid
+ graph TD
+   A(div)-->B(a):::select
+    A-->C(p)
+   A-->D(a.class1)
+   A-->E(a.class2):::select
    
 
    classDef select fill:#1919a6;
 ```
 
-
-
-
-
-
-
-
-
-
-
-
+>Thanks. I hope it helps :) any queries do pm [@linkeshvaranr](https://twitter.com/messages/944879661900742657-1555128594728333313)
