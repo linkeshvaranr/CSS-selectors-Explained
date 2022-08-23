@@ -223,6 +223,58 @@
 
 ```
 
+***
+
+# Pseudo Class 
+
+### p:first-child (First child selector) selects the element if it's the first child
+
+```css
+    p:first-child{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(div)-->B(p):::select
+    A(div)-->C(p)
+    A(div)-->D(p)
+    A(div)-->E(p)
+
+    E(div)--->F(a)
+    E(div)--->G(p)
+    E(div)--->I(p)
+    classDef select fill:#1919a6;
+```
+
+***
+
+### p:last-child (Last child selector) selects the element if it's the last child
+
+```css
+    p:last-child{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+   A(div)-->B(a)
+   A(div)-->C(a)
+   A(div)-->D(p):::select
+
+   E(div)--->F(p)
+   E(div)--->G(p)
+   E(div)--->I(a)
+
+   classDef select fill:#1919a6;
+
+```
+
+
 
 
 
