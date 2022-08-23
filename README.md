@@ -81,8 +81,9 @@
 
 ***
 
-# Combination
-## CSS selectors can be used in various combination to select desired element/s
+# Combinations
+
+#### CSS selectors can be used in various combination to select desired element/s
 
 ### div p (Descendant slector) slelects all descendant(p) element of the parent(div)
 
@@ -102,6 +103,53 @@
 
     classDef select fill:#1919a6;
 ```
+
+***
+
+### div > p (Direct child selector) selects the 1st generation descendants
+
+```css
+    div > p{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(div)-->B(p):::select
+    A --> C(div) -->F(p)
+    A --> D(btn)
+    B --> E(p)
+
+    classDef select fill:#1919a6;
+
+```
+
+***
+
+### div ~ p (General sibling slector) slects elements (p) next to (div) of same generation
+
+```css
+    div ~ p{
+        background-color:blue;
+        
+        
+    }
+```
+```mermaid{
+    graph TD
+    A(p) 
+    B(div)
+    C(p):::select
+    D(a):::select
+    E(p)
+
+
+    classDef select fill:#1919a6;
+}
+
+
 
 
 
