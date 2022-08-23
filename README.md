@@ -142,12 +142,61 @@
     A(p) 
     B(div)
     C(p):::select
+    D(a)
+    E(p):::select
+
+
+    classDef select fill:#1919a6;
+```
+
+***
+
+### div + p (adjacent sibling selector) selects element (p) immediate next to (div) element
+
+```css
+    div + p{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(p) 
+    B(div)
+    C(p):::select
+    D(a)
+    E(p)
+
+
+    classDef select fill:#1919a6;
+```
+
+***
+
+### a, div (or slector) selects all elements in the list
+
+```css
+    a, div{
+        background-color:blue;
+
+
+    }
+```
+```mermaid
+    graph TD
+    A(a):::select
+    B(div):::select
     D(a):::select
     E(p)
 
 
     classDef select fill:#1919a6;
 ```
+
+***
+
+
 
 
 
